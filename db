@@ -1,0 +1,11 @@
+# creating table
+create table users(
+	uid serial primary key,
+	firstname varchar(100) not null,
+	lastname varchar(100) not null,
+	email varchar(120) not null unique,
+	pwdhash varchar(100) not null
+	);	
+
+# inserting into table
+insert into users (firstname, lastname, email, pwdhash)values ('rahul', 'r', 'rahulrmysore@gmail.com', 'learningflask');
